@@ -3,6 +3,9 @@ import PyPDF2
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import spacy
+import spacy.cli
+spacy.cli.download("en_core_web_sm")
+
 
 # Load spaCy model
 nlp = spacy.load('en_core_web_sm')
